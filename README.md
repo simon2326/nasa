@@ -1,2 +1,2 @@
 # nasa
-Sitio web estático - Proyecto - Plataformas de programación empresarial
+Sitio web estático - Proyecto NASA ∙ Plataformas de programación empresarial
