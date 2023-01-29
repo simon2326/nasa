@@ -1,0 +1,10 @@
+body#main{
+    background-color:darkslategray;
+}
+
+#gargantua{
+    background-color:darkgreen;
+    background-image: url(./img/gargantua.jpg);
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+}
