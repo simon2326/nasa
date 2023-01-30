@@ -1,10 +1,59 @@
-body#main{
-    background-color:darkslategray;
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-#gargantua{
-    background-color:darkgreen;
-    background-image: url(./img/gargantua.jpg);
-    background-repeat: no-repeat;
-    background-position: 50% 50%;
+body#main{
+    font-family: 'Poppins', sans-serif;
 }
+
+.contenedor{
+    width: 90%;
+    max-width: 1200px;
+    overflow: hidden;
+    margin: auto;
+    padding: 60px 0;
+}
+
+.header{
+    height: 100vh;
+    background-image: linear-gradient(to right, rgb(255, 129, 119, 0.5) 0%, rgb(255, 134, 122, 0.5) 0%, rgb(255, 140, 127, 0.5) 21%, rgb(249, 145, 133, 0.5) 52%, rgb(207, 85, 108, 0.5) 78%, rgb(177, 42, 91, 0.5) 100%), url(../img/streaming.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+}
+
+.head{
+    padding: 0;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: #fff;
+}
+
+.streaming{
+    position: fixed;
+    top: 30px;
+    right: 30px;
+    background: rgb(57, 40, 40);
+    width: 40px;
+    height: 40px;
+    border-radius: 10px;
+    box-shadow: 0 0 6px rgba(0, 0, 0, 0.5);
+    cursor: pointer;
+}
+
+.menu-navegacion{
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 20vw;
+    height: 100%;
+    background-image: linear-gradient(to top, #3f51b1 0%, #5a55ae 13%, #7b5fac 25%, #8f6aae 38%, #a86aa4 50%, #cc6b8e 62%, #f18271 75%, #f3a469 87%, #f7c978 100%);
+    
+}
+
