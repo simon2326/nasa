@@ -38,6 +38,7 @@ body#main{
 
 .streaming{
     position: fixed;
+    z-index: 10;
     top: 30px;
     right: 30px;
     background: rgb(57, 40, 40);
