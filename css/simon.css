@@ -18,7 +18,7 @@ body#main{
 
 .header{
     height: 100vh;
-    background-image: linear-gradient(to right, rgb(255, 129, 119, 0.5) 0%, rgb(255, 134, 122, 0.5) 0%, rgb(255, 140, 127, 0.5) 21%, rgb(249, 145, 133, 0.5) 52%, rgb(207, 85, 108, 0.5) 78%, rgb(177, 42, 91, 0.5) 100%), url(../img/streaming.jpg);
+    background-image: linear-gradient(to right, rgba(255, 128, 119, 0.4) 0%, rgb(255, 134, 122, 0.4) 0%, rgb(255, 140, 127, 0.4) 21%, rgb(249, 145, 133, 0.4) 52%, rgb(207, 85, 108, 0.4) 78%, rgb(177, 42, 91, 0.4) 100%), url(../img/streaming.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
@@ -27,6 +27,7 @@ body#main{
 
 .head{
     padding: 0;
+    text-align: center;
     height: 100%;
     display: flex;
     justify-content: center;
@@ -54,6 +55,213 @@ body#main{
     width: 20vw;
     height: 100%;
     background-image: linear-gradient(to top, #3f51b1 0%, #5a55ae 13%, #7b5fac 25%, #8f6aae 38%, #a86aa4 50%, #cc6b8e 62%, #f18271 75%, #f3a469 87%, #f7c978 100%);
-    
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    transition: transform .3s ease-in-out;
+    transform: translate(110%);
+    box-shadow: 0 0 6px rgb(0, 0, 0, .5);
 }
 
+.spread{
+    transform: translate(0);
+}
+
+.menu-navegacion{
+    color: #fff;
+    text-decoration: none;
+}
+
+.titulo{
+    font-size: 60px;
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.copy{
+    font-weight: 300;
+    font-size: 25px;
+}
+
+.subtitulo{
+    text-align: center;
+    font-weight:800;
+    color: brown;
+    margin-bottom: 40px;
+    font-size: 40px;
+}
+
+.contenedor-servicio{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.contenedor-servicio img{
+    width: 50%;
+}
+
+.checklist-servicio{
+    width: 45%;
+}
+
+.service{
+    margin-bottom: 20px;
+}
+
+.n-service{
+    margin-bottom: 7px;
+    color: #8a0234;
+}
+
+.number{
+    display: inline-block;
+    background-image: linear-gradient(to right, #ff8177 0%, #ff867a 0%, #ff8c7f 21%, #f99185 52%, #cf556c 78%, #b12a5b 100%);
+    width: 30px;
+    height: 30px;
+    color: #fff;
+    text-align: center;
+    border-radius: 50%;
+    font-weight: 600;
+    line-height: 30px;
+    margin-right: 5px;
+}
+
+.gallery{
+    background: #f2f2f2;
+}
+
+.contenedor-galeria{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.img-galeria{
+    width: 250px;
+    display: block;
+    margin-bottom: 15px;
+    box-shadow: 0 0 6px rgba(0, 0, 0, .5);
+    cursor: pointer;
+}
+
+.us{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.cont-nosotros{
+    display: inline-block;
+    width: 30%;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+footer{
+    background: rgb(37, 4, 0);
+    padding-bottom: 0.1px;
+
+}
+
+.footer-content{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
+.contact-us{
+    width: 40%;
+    color: #fff;
+}
+
+.brand{
+    font-weight: 500;
+    font-size: 40px;
+}
+
+.brand+p{
+    font-weight: 500;
+}
+
+.social-media{
+    width: 50%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.social-media-icon{
+    display: inline-block;
+    margin-left: 20px;
+    width: 60px;
+    height: 60px;
+    border: 1px solid #fff;
+    border-radius: 50%;
+    text-align: center;
+    color: #f2f2f2;
+}
+
+.social-media-icon:hover{
+    background: #fff;
+    color: #8a0234;
+}
+.social-media-icon i{
+    font-size: 30px;
+    line-height: 60px;
+}
+
+.line{
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    height: 2px;
+    background: #fff;
+    margin-bottom: 60px;
+}
+
+@media screen and (max-width: 800px) {
+    .menu-navegacion{
+        width: 50vw;
+    }
+
+    .titulo{
+        font-size: 40px;
+    }
+
+    .contenedor-servicio img{
+        width: 80%;
+        margin-bottom: 40px;
+    }
+
+    .checklist-servicio{
+        width: 80%;
+    }
+
+    .img-galeria{
+        width: 45%;
+    }
+
+    .footer-content{
+        justify-content: center;
+    }
+
+    .social-media{
+        width: 80%;
+        justify-content: space-evenly;
+    }
+
+    .social-media i{
+        margin-left: 0;
+    }
+
+    .contact-us{
+        text-align: center;
+        width: 80%;
+        margin-bottom: 40px;
+    }
+
+}
