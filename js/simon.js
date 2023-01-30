@@ -13,3 +13,19 @@ window.addEventListener('click', e=>{
     menu.classList.toggle("spread");
     }
 });
+
+function netflix(){
+    location.href = "netflix.html";
+}
+
+function disney(){
+    location.href = "disney.html";
+}
+
+function star(){
+    location.href = "star.html";
+}
+
+function hbo(){
+    location.href = "hbo.html";
+}

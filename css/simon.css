@@ -38,7 +38,6 @@ body#main{
 
 .streaming{
     position: fixed;
-    z-index: 10;
     top: 30px;
     right: 30px;
     background: rgb(57, 40, 40);
@@ -265,4 +264,9 @@ footer{
         margin-bottom: 40px;
     }
 
+}
+
+body#disney{
+    background-color: #3f51b1;
+    background-image: url(../img/disney.png);
 }
