@@ -1,6 +1,29 @@
-body{
+body#netflix{
     margin: 0;
     padding: 0;
-    background: url(../img/fondo.png);
-    font-family: sans-serif;
+    background-image: linear-gradient(to top, rgb(161, 140, 209, 0.5) 0%, rgb(251, 194, 235, 0.5) 100%), url(../img/fondo.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+}
+
+body#star{
+    margin: 0;
+    padding: 0;
+    background-image: linear-gradient(120deg, rgb(246, 211, 101, 0.3) 0%, rgb(253, 160, 133,0.3) 100%), url(../img/fondo-star.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+}
+
+body#hbo{
+    margin: 0;
+    padding: 0;
+    background-image: linear-gradient(to top, rgb(161, 140, 209, 0.5) 0%, rgb(251, 194, 235, 0.5) 100%), url(../img/fondo-hbo.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
 }
