@@ -1,17 +1,24 @@
+
+
 body#netflix{
+    font-family: 'Poppins', sans-serif;
     margin: 0;
-    padding: 0;
-    background-image: linear-gradient(to top, rgb(161, 140, 209, 0.5) 0%, rgb(251, 194, 235, 0.5) 100%), url(../img/fondo.png);
+    background-image: linear-gradient(to top, rgba(255, 8, 8, 0.253) 0%, rgba(131, 10, 10, 0.452) 100%), url(../img/fondo.png);
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
     background-position: center;
+    padding-left: 8%;
+    padding-right: 3%;
+    padding-top: 1%;
+    box-sizing: border-box;
 }
 
-body#star{
+body#primevideo{
+    font-family: 'Poppins', sans-serif;
     margin: 0;
     padding: 0;
-    background-image: linear-gradient(120deg, rgb(246, 211, 101, 0.3) 0%, rgb(253, 160, 133,0.3) 100%), url(../img/fondo-star.webp);
+    background-image: linear-gradient(to right, rgb(79, 172, 254, 0.3) 0%, rgb(0, 242, 254, 0.3) 100%), url(../img/fondo-prime.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
@@ -19,11 +26,78 @@ body#star{
 }
 
 body#hbo{
+    font-family: 'Poppins', sans-serif;
     margin: 0;
     padding: 0;
-    background-image: linear-gradient(to top, rgb(161, 140, 209, 0.5) 0%, rgb(251, 194, 235, 0.5) 100%), url(../img/fondo-hbo.jpg);
+    background-image: linear-gradient(to top, rgba(106, 3, 202, 0.5) 0%, rgba(255, 85, 255, 0.5) 100%), url(../img/fondo-hbo.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
     background-position: center;
 }
+
+.navbar{
+    height: 12%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.menu-icon{
+    width: 40px;
+    cursor: pointer;
+    margin-left: 40px;
+}
+
+nav{
+    flex: 1;
+    text-align: right;
+} 
+
+nav ul li{
+    list-style: none;
+    display: inline-block;
+    margin-left: 60px;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    font-size: 17px;
+}
+
+.row{
+    display: flex;
+    height: 88%;
+    align-items: center;
+}
+
+.col{
+    flex-basis: 50%;
+}
+
+h1{
+    color: rgb(255, 255, 255);
+    font-size: 50px;
+    margin-bottom: 10px;
+}
+
+p{
+    color:rgb(255, 255, 255);
+    font-size: 13px;
+    line-height: 15px;
+    margin-bottom: 1px;
+}
+
+button{
+    width: 110px;
+    color: #000;
+    font-size: 12px;
+    padding: 12px 0;
+    background: #fff;
+    border: 0;
+    border-radius: 20px;
+    outline: none;
+    margin-top: 20px;
+}
+
