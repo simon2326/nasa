@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
 }
 
 body#main{
@@ -266,7 +267,110 @@ footer{
 
 }
 
+:root{
+    --padding-container: 100px 0;
+    --color-title: rgb(112, 0, 43);
+}
+
 body#disney{
-    background-color: #3f51b1;
-    background-image: url(../img/disney.png);
+    font-family: 'Poppins', sans-serif;
+}
+
+.container{
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    overflow: hidden;
+    padding: var(--padding-container);
+}
+
+.proximamente{
+    width: 100%;
+    height: 100vh;
+    min-height: 600px;
+    max-height: 800px;
+    position: relative;
+    display: grid;
+    grid-template-rows: 100px, 1fr;
+    color: #fff;
+}
+
+.proximamente::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(120deg, rgb(212, 252, 121, .5) 0%, rgb(150, 230, 161, .5) 100%), url("../img/proximg.jpg");
+    background-size: cover;
+    z-index: -1;
+}
+
+.nav{
+    padding:0 ;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    --padding-container:0;
+}
+
+
+.nav-title{
+    font-weight: 300;
+}
+
+.nav-link{
+    margin-left: auto;
+    padding: 0;
+    display: grid;
+    grid-auto-flow: column;
+    grid-auto-columns: max-content;
+    gap: 2em;
+
+}
+
+.nav-items{
+    list-style: none;
+}
+
+.nav-menu{
+    margin-left: auto;
+    cursor: pointer;
+    display: none;
+}
+
+.nav-links{
+    color: #fff;
+    text-decoration: none;
+}
+
+.nav-img{
+    display: block;
+    width: 30px;
+}
+
+.nav-close{
+    display: var(--show, none);
+}
+
+/*PROX CONTAINER*/
+.prox-container{
+    max-width: 800px;
+    --padding-container: 0;
+    display: grid;
+    grid-auto-rows: max-content;
+    align-content: center;
+    gap: 1em;
+    padding-bottom: 100px;
+    text-align: center;
+}
+
+.prox-title{
+    font-size: 3rem;
+}
+
+.cta{
+    display: inline-block;
+    background-color: black;
 }

@@ -22,10 +22,11 @@ function disney(){
     location.href = "disney.html";
 }
 
-function star(){
-    location.href = "star.html";
+function primevideo(){
+    location.href = "primevideo.html";
 }
 
 function hbo(){
     location.href = "hbo.html";
 }
+
