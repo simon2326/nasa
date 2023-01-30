@@ -370,7 +370,57 @@ body#disney{
     font-size: 3rem;
 }
 
-.cta{
+/*SERIES*/
+.series{
+    background-color: #e5e5f7;
+}
+
+.series-container{
+    display: grid;
+    grid-template-columns: 50px 1fr 1fr 50px;
+    gap: 1em;
+    align-items: center;
+}
+
+.series-body{
+    display: grid;
+    grid-template-columns: 1fr max-content;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2em;
+    grid-column: 2/4;
+    grid-row: 1/2;
+    opacity: 0;
+    pointer-events: none;
+}
+
+.series-body-show{
+    pointer-events: unset;
+    opacity: 1;
+    transition: opacity 1.5s ease-in-out;
+}
+
+.series-img{
+    width: 250px;
+    height: 250px;
+    border-radius: 15%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.series-text{
+    max-width: 700px;
+}
+
+.series-des{
+    background-color: royalblue;
+    color: #fff;
     display: inline-block;
-    background-color: black;
+    padding: 5px;
+
+}
+
+.series-arrow{
+    width: 90%;
+    cursor: pointer;
 }
