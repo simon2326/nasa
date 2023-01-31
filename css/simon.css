@@ -424,3 +424,58 @@ body#disney{
     width: 90%;
     cursor: pointer;
 }
+
+/*PELICULAS*/
+.pel{
+    background-color: #8aa0da;
+}
+
+.pel-container{
+    display: grid;
+    grid-template-columns: 50px 1fr 1fr 50px;
+    gap: 1em;
+    align-items: center;
+}
+
+.pel-body{
+    display: grid;
+    grid-template-columns: 1fr max-content;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2em;
+    grid-column: 2/4;
+    grid-row: 1/2;
+    opacity: 0;
+    pointer-events: none;
+}
+
+.pel-body-show{
+    pointer-events: unset;
+    opacity: 1;
+    transition: opacity 1.5s ease-in-out;
+}
+
+.pel-img{
+    width: 250px;
+    height: 250px;
+    border-radius: 15%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.pel-text{
+    max-width: 700px;
+}
+
+.pel-des{
+    background-color: royalblue;
+    color: #fff;
+    display: inline-block;
+    padding: 5px;
+
+}
+
+.pel-arrow{
+    width: 90%;
+    cursor: pointer;
+}
