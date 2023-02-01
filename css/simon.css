@@ -55,7 +55,7 @@ body#main{
     right: 0;
     width: 20vw;
     height: 100%;
-    background-image: linear-gradient(to top, #3f51b1 0%, #5a55ae 13%, #7b5fac 25%, #8f6aae 38%, #a86aa4 50%, #cc6b8e 62%, #f18271 75%, #f3a469 87%, #f7c978 100%);
+    background-image: linear-gradient(to top, rgb(63, 81, 177, .8) 0%, rgb(90, 85, 174, .8) 13%, rgb(123, 95, 172, .8) 25%, rgb(143, 106, 174, .5) 38%, rgb(168, 106, 164, .5) 50%, rgb(204, 107, 142, .5) 62%, rgb(241, 130, 113, .8) 75%, rgb(243, 164, 105, .8) 87%, rgb(247, 201, 120, .8) 100%);
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
@@ -65,13 +65,17 @@ body#main{
     box-shadow: 0 0 6px rgb(0, 0, 0, .5);
 }
 
+.deco{
+    color: #fff;
+    text-decoration: none;
+}
+
 .spread{
     transform: translate(0);
 }
 
 .menu-navegacion{
     color: #fff;
-    text-decoration: none;
 }
 
 .titulo{
@@ -268,7 +272,7 @@ footer{
 }
 
 :root{
-    --padding-container: 100px 0;
+    --padding-container: 10px 0;
     --color-title: rgb(112, 0, 43);
 }
 
@@ -277,17 +281,17 @@ body#disney{
 }
 
 .container{
-    width: 90%;
+    width: 95%;
     max-width: 1200px;
     margin: 0 auto;
     overflow: hidden;
-    padding: var(--padding-container);
+    padding: 100px;
 }
 
 .proximamente{
     width: 100%;
     height: 100vh;
-    min-height: 600px;
+    min-height: 300px;
     max-height: 800px;
     position: relative;
     display: grid;
@@ -295,7 +299,7 @@ body#disney{
     color: #fff;
 }
 
-.proximamente::before{
+.proximamente:before{
     content: "";
     position: absolute;
     top: 0;
@@ -372,7 +376,9 @@ body#disney{
 
 /*SERIES*/
 .series{
-    background-color: #e5e5f7;
+    background-image: linear-gradient(to top, rgb(217, 175, 217, .5) 0%, rgb(151, 217, 225, .5) 100%), url("../img/green.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .series-container{
@@ -427,7 +433,9 @@ body#disney{
 
 /*PELICULAS*/
 .pel{
-    background-color: #8aa0da;
+    background-image: linear-gradient(120deg, rgb(166, 192, 254, .5) 0%, rgb(246, 128, 132, .5) 100%), url("../img/blue.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .pel-container{

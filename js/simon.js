@@ -30,3 +30,10 @@ function hbo(){
     location.href = "hbo.html";
 }
 
+function prox(){
+    location.href = "proximamente.html";
+}
+
+function back(){
+    location.href = "index.html";
+}

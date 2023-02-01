@@ -20,13 +20,13 @@
             </div>
             <ul class="nav-link nav-link-menu">
                 <li class="nav-items">
-                    <a href="#" class="nav-links">BACK HOME</a>
+                    <a onclick="back()" class="nav-links">BACK HOME</a>
                 </li>
+                
+                <a href="#series" class="nav-links">SERIES</a>
+                
                 <li class="nav-items">
-                    <a href="#" class="nav-links">SERIES</a>
-                </li>
-                <li class="nav-items">
-                    <a href="#" class="nav-links">PÉLÍCULAS</a>
+                    <a href="#peliculas" class="nav-links">PELÍCULAS</a>
                 </li>
 
                 <img src="./img/x.png" alt="close" class="nav-close">
@@ -38,11 +38,10 @@
         <section class="prox-container container">
             <h1 class="prox-title">PRÓXIMAS SERIES Y PELÍCULAS</h1>
             <h1 class="prox-title">¡TUS FAVORITAS!</h1>
-
         </section>
     </header>
     <main>
-        <section class="series">
+        <section class="series" id="#series">
             <div class="series-container container">
                 <img src="./img/la.png" alt="left arrow" class="series-arrow" id="anterior">
                 <section class="series-body series-body-show" data-id="1">
@@ -101,7 +100,7 @@
                 
             </div>
         </section>
-        <section class="pel">
+        <section class="pel" id="#peliculas">
             <div class="pel-container container">
                 <img src="./img/la.png" alt="left arrow" class="pel-arrow" id="anteriorp">
                 <section class="pel-body pel-body-show" data-id="1">
@@ -162,5 +161,6 @@
         </section>
     </main>
     <script src="js/prox.js"></script>
+    <script src="js/simon.js"></script>
 </body>
 </html>
