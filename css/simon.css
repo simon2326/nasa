@@ -331,7 +331,7 @@ body#disney{
     grid-auto-flow: column;
     grid-auto-columns: max-content;
     gap: 2em;
-
+    color: #fff;
 }
 
 .nav-items{
@@ -360,7 +360,7 @@ body#disney{
 
 /*PROX CONTAINER*/
 .prox-container{
-    max-width: 800px;
+    max-width: 900px;
     --padding-container: 0;
     display: grid;
     grid-auto-rows: max-content;
@@ -486,4 +486,82 @@ body#disney{
 .pel-arrow{
     width: 90%;
     cursor: pointer;
+}
+
+/*MEDIA QUERY*/
+@media (max-width:800px) {
+    .nav-menu{
+        display: block;
+    }
+
+    .nav-link-menu{
+        position: fixed;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        z-index: 100;
+        opacity: 0;
+        pointer-events: none;
+        transition: .7s opacity;
+    }
+
+    .nav-link--show{
+        --show: block;
+        opacity: 1;
+        pointer-events: unset;
+    }
+
+    .nav-close{
+        position: absolue;
+        top: 30px;
+        right: 30px;
+        width: 30px;
+        cursor: pointer;
+    }
+
+    .series-container{
+        grid-template-columns: 20px 1fr 20px;
+    }
+
+    .series-body{
+        grid-template-columns: 1fr;
+        grid-template-rows: max-content max-content;
+        gap: 3em;
+        justify-self:center;
+    }
+
+    .series-img{
+        width: 200px;
+        height: 200px;
+    }
+
+    .pel-container{
+        grid-template-columns: 20px 1fr 20px;
+    }
+
+    .pel-body{
+        grid-template-columns: 1fr;
+        grid-template-rows: max-content max-content;
+        gap: 3em;
+        justify-self:center;
+    }
+
+    .pel-img{
+        width: 200px;
+        height: 200px;
+    }
+}
+
+@media (max-width:600px){
+
+    .series-container{
+        grid-template-columns: 28px 1fr 28px;
+        gap: .9em;
+    }
+
 }

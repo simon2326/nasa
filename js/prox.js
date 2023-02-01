@@ -49,6 +49,19 @@
         
         slidersp[value-1].classList.add('pel-body-show');
     }
+
+    const openButton =  document.querySelector('.nav-menu');
+    const menu = document.querySelector('.nav-link');
+    const cerrarMenu = document.querySelector('.nav-close');
+
+    openButton.addEventListener('click', ()=>{
+        menu.classList.add('nav-link--show');
+    });
+
+    cerrarMenu.addEventListener('click', ()=>{
+        menu.classList.remove('nav-link--show');
+    });
+
 })();
 
 
