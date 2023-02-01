@@ -109,6 +109,15 @@ p#pnet{
     margin-right: 30px;
 }
 
+p#phbo{
+    color:rgb(255, 255, 255);
+    font-size: 13px;
+    line-height: 15px;
+    margin-bottom: 1px;
+    margin-right: 30px;
+    margin-left: 70px;
+}
+
 p#pprime{
     color:rgb(255, 255, 255);
     font-size: 13px;
@@ -138,6 +147,20 @@ button#btnnet{
     outline: none;
     margin-top: 20px;
     cursor: pointer;
+}
+
+button#btnhbo{
+    width: 110px;
+    color: #000;
+    font-size: 12px;
+    padding: 12px 0;
+    background: #fff;
+    border: 0;
+    border-radius: 20px;
+    outline: none;
+    margin-top: 20px;
+    cursor: pointer;
+    margin-left: 70px;
 }
 
 button#btnprime{
@@ -179,6 +202,7 @@ button#btndis{
     margin: 10px 15px;
 
     background-position: center;
+
     background-size: cover;
     transition: transform 0.5s;
 }
