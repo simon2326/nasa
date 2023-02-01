@@ -41,7 +41,7 @@ body#main{
     position: fixed;
     top: 30px;
     right: 30px;
-    background: rgb(57, 40, 40);
+    background: rgb(206, 175, 175);
     width: 40px;
     height: 40px;
     border-radius: 10px;
@@ -62,7 +62,7 @@ body#main{
     align-items: center;
     transition: transform .3s ease-in-out;
     transform: translate(110%);
-    box-shadow: 0 0 6px rgb(0, 0, 0, .5);
+    box-shadow: 0 0 6px #fff;
 }
 
 .deco{
