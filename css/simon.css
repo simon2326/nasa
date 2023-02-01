@@ -333,6 +333,7 @@ body#disney{
     grid-auto-columns: max-content;
     gap: 2em;
     color: #fff;
+    cursor: pointer;
 }
 
 .nav-items{
