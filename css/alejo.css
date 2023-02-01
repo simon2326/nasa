@@ -15,34 +15,43 @@ body#netflix{
 body#primevideo{
     font-family: 'Poppins', sans-serif;
     margin: 0;
-    padding: 0;
     background-image: linear-gradient(to right, rgb(79, 172, 254, 0.3) 0%, rgb(0, 242, 254, 0.3) 100%), url(../img/fondo-prime.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
     background-position: center;
+    padding-left: 8%;
+    padding-right: 3%;
+    padding-top: 1%;
+    box-sizing: border-box;
 }
 
 body#hbo{
     font-family: 'Poppins', sans-serif;
     margin: 0;
-    padding: 0;
     background-image: linear-gradient(to top, rgba(106, 3, 202, 0.5) 0%, rgba(255, 85, 255, 0.5) 100%), url(../img/fondo-hbo.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
     background-position: center;
+    padding-left: 8%;
+    padding-right: 3%;
+    padding-top: 1%;
+    box-sizing: border-box;
 }
 
 body#disney{
     font-family: 'Poppins', sans-serif;
     margin: 0;
-    padding: 0;
     background-image: linear-gradient(to top, rgb(48, 207, 208, 0.5) 0%, rgb(51, 8, 103, 0.5) 100%), url(../img/fondo-disney.webp);
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
     background-position: center;
+    padding-left: 8%;
+    padding-right: 3%;
+    padding-top: 1%;
+    box-sizing: border-box;
 }
 
 .navbar{
@@ -91,14 +100,12 @@ h2{
     color: rgb(255, 255, 255);
     font-size: 50px;
     margin-bottom: 10px;
-    margin-left: 70px;
 }
 
 h3{
     color: rgb(255, 255, 255);
     font-size: 50px;
     margin-bottom: 10px;
-    margin-left: 70px;
 }
 
 p#pnet{
@@ -115,7 +122,6 @@ p#phbo{
     line-height: 15px;
     margin-bottom: 1px;
     margin-right: 30px;
-    margin-left: 70px;
 }
 
 p#pprime{
@@ -124,7 +130,6 @@ p#pprime{
     line-height: 15px;
     margin-bottom: 1px;
     margin-right: 30px;
-    margin-left: 70px;
 }
 
 p#pdis{
@@ -133,7 +138,6 @@ p#pdis{
     line-height: 15px;
     margin-bottom: 1px;
     margin-right: 30px;
-    margin-left: 70px;
 }
 
 button#btnnet{
@@ -160,7 +164,6 @@ button#btnhbo{
     outline: none;
     margin-top: 20px;
     cursor: pointer;
-    margin-left: 70px;
 }
 
 button#btnprime{
@@ -174,7 +177,6 @@ button#btnprime{
     outline: none;
     margin-top: 20px;
     cursor: pointer;
-    margin-left: 70px;
 }
 
 button#btndis{
@@ -188,7 +190,6 @@ button#btndis{
     outline: none;
     margin-top: 20px;
     cursor: pointer;
-    margin-left: 70px;
 }
 
 
@@ -200,9 +201,7 @@ button#btndis{
     padding: 15px 25px;
     box-sizing: border-box;
     margin: 10px 15px;
-
     background-position: center;
-
     background-size: cover;
     transition: transform 0.5s;
 }
@@ -210,6 +209,7 @@ button#btndis{
 /*NETFLIX*/
 .card1{
     background-image: url(../img/st.jpg);
+
 }
 
 .card2{

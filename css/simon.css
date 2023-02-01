@@ -208,6 +208,7 @@ footer{
     border-radius: 50%;
     text-align: center;
     color: #f2f2f2;
+    cursor: pointer;
 }
 
 .social-media-icon:hover{

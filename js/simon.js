@@ -37,3 +37,15 @@ function prox(){
 function back(){
     location.href = "index.html";
 }
+
+function insta(){
+    location.href = "https://www.instagram.com/taylorswift/";
+}
+
+function tw(){
+    location.href = "https://twitter.com/SabrinaAnnLynn";
+}
+
+function face(){
+    location.href = "https://www.facebook.com/TheNeighbourhood";
+}

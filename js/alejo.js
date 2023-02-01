@@ -17,3 +17,8 @@ function toHBO(){
 function toPrime(){
     location.href = "https://www.primevideo.com/";
 }
+
+const open = document.getElementById('n1');
+const modal_container = document.getElementById('modal_container');
+const close = document.getElementById('close');
+
